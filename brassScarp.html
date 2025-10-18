@@ -28,26 +28,41 @@
 <body>
    <section id="home">
       <div class="flex flex-col">
-         <header class="fixed top-0 left-0 w-full px-4 md:px-8 py-3 bg-gray-900 flex justify-between items-center z-50">
-            <a href="#" class="text-white text-lg font-semibold ml-4"><img class="w-24 h-16 hover:bg-none"
-                  src="./assets/Logo-B3U-Ev41.png" alt=""></a>
-            <button class="text-white md:hidden mr-4 focus:outline-none">
-               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                  </path>
-               </svg>
-            </button>
-            <nav class="hidden md:flex">
-               <a href="index.html" class="hover:text-black text-white font-medium text-xl  px-4 py-2">Home</a>
-               <a href="metalScrapTrading.html" target="_blank"
-                  class="hover:text-black text-white font-medium text-xl  px-4 py-2">Metal Scrap Trading</a>
-               <a href="inspectionCertificates.html" target="_blank"
-                  class="hover:text-black text-white font-medium text-xl  px-4 py-2">Pre-Inspection Certificates</a>
-
-               <a href="#contact" class="hover:text-black text-white font-medium text-xl  px-4 py-2">Contact US</a>
-            </nav>
-         </header>
+        <header class="fixed top-0 left-0 w-full px-2 sm:px-4 md:px-6 lg:px-8 py-3 bg-gray-900 flex justify-between items-center z-50">
+   <!-- Two Logos Container -->
+   <div class="flex items-center gap-1 sm:gap-2 md:gap-2 lg:gap-3 ml-1 sm:ml-2 md:ml-4">
+      <a href="#" class="flex-shrink-0">
+         <img class="w-16 h-10 sm:w-20 sm:h-12 md:w-24 md:h-14 lg:w-28 lg:h-16 object-contain hover:opacity-80 transition-opacity" 
+              src="./assets/Logo-B3U-Ev41_V1.png" alt="Maruti Logo">
+      </a>
+      <!-- Divider line between logos -->
+      <div class="hidden sm:block w-px h-8 md:h-10 lg:h-12 bg-gray-600"></div>
+      <a href="#" class="flex-shrink-0">
+         <img class="w-16 h-10 sm:w-20 sm:h-12 md:w-24 md:h-14 lg:w-28 lg:h-16 object-contain hover:opacity-80 transition-opacity" 
+              src="./assets/Logo-B3U-Ev41.png" alt="BIR Logo">
+      </a>
+   </div>
+   
+   
+   <!-- Mobile Menu Button -->
+   <button class="text-white md:hidden mr-2 sm:mr-2 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+         xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+         </path>
+      </svg>
+   </button>
+   
+   <!-- Desktop Navigation -->
+   <nav class="hidden md:flex md:gap-1 lg:gap-2">
+      <a href="index.html" class="hover:text-black text-white font-medium text-sm md:text-base lg:text-xl px-2 lg:px-4 py-2">Home</a>
+      <a href="metalScrapTrading.html" target="_blank"
+         class="hover:text-black text-white font-medium text-sm md:text-base lg:text-xl px-2 lg:px-4 py-2">Metal Scrap Trading</a>
+      <a href="inspectionCertificates.html" target="_blank"
+         class="hover:text-black text-white font-medium text-sm md:text-base lg:text-xl px-2 lg:px-4 py-2">Pre-Inspection Certificates</a>
+      <a href="#contact" class="hover:text-black text-white font-medium text-sm md:text-base lg:text-xl px-2 lg:px-4 py-2">Contact US</a>
+   </nav>
+</header>
          <div
             class="md:hidden bg-gray-900 fixed top-0 left-0 w-full h-full z-40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
          </div>
